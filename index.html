@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loja Universo dos Games</title>
+  <link rel="stylesheet" href="lib/bootstrap.min.css">
+  <style>
+    .navbar-nav .nav-link.active {
+      color: aliceblue;
+    }
+    /* Corrigido: imagens das categorias */
+    .categoria-img {
+      height: 200px;
+      width: auto;
+      object-fit: contain;
+      display: block;
+      margin: 0 auto;
+    }
+    /* Corrigido: imagens dos cards */
+    .card img {
+      height: 300px;
+      object-fit: cover;
+      width: 100%;
+    }
+    /* Fundo do carousel */
+    .carousel {
+      background-color: #335e83;
+      border-radius: 20px;
+    }
+    header img{
+        height: 150px;
+    }
+  </style>
+</head>
+<body>
+  <!-- HEADER -->
+  <header id="cabecalho">
+    <div class="navbar navbar-expand-lg">
+      <div class="container">
+        <img src="img/header/LogoHeader.webp" alt="logo loja">
+        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <nav class="collapse navbar-collapse justify-content-end" id="menu">
+          <ul class="nav navbar-nav nav-pills">
+            <li class="nav-item">
+              <a class="nav-link active" href="#inicio">Início</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#produtos">Produtos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#promocoes">Promoções</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contatos">Contatos</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- CAROUSEL -->
+  <div id="meuCarousel" class="carousel slide d-flex justify-content-center" data-bs-ride="carousel">
+    <div class="carousel-inner w-100">
+      <div data-bs-interval="3000" class="carousel-item active">
+        <img src="img/header/LAYOUTheader01.png" class="d-block w-100" alt="">
+      </div>
+      <div data-bs-interval="3000" class="carousel-item">
+        <img src="img/header/LAYOUT2header02.png" class="d-block w-100" alt="">
+      </div>
+      <div data-bs-interval="3000" class="carousel-item">
+        <img src="img/header/Banner_Header.webp" class="d-block w-100" alt="">
+        
+      </div>
+    </div>
+  </div>
+
+  <!-- CONTEÚDO COM FUNDO COLORIDO -->
+  <div class="bg-site">
+
+    <!-- GRID DE CATEGORIAS -->
+    <div class="container mt-4">
+      <div class="row text-center">
+        <div class="col">
+          <img src="img/produtos/ps5 GRID.avif" alt="Playstation 5" class="categoria-img">
+          <h3>Consoles</h3>
+        </div>
+        <div class="col">
+          <img src="img/produtos/iphone GRID.avif" alt="Celulares" class="categoria-img">
+          <h3>Smartphones</h3>
+        </div>
+        <div class="col">
+          <img src="img/produtos/jbl drid.png" alt="JBL" class="categoria-img">
+          <h3>Sonorização</h3>
+        </div>
+        <div class="col">
+          <img src="img/produtos/drone GRID.avif" alt="Drones" class="categoria-img">
+          <h3>Drones</h3>
+        </div>
+        <div class="col">
+          <img src="img/produtos/tecladogamer GRID.avif" alt="Perifericos Gamer" class="categoria-img">
+          <h3>Periféricos</h3>
+        </div>
+      </div>
+    </div>
+
+    <!-- CARDS DE PRODUTOS -->
+    <div class="container mt-5">
+      <div class="row">
+        <!-- CARD 1 -->
+        <div class="col-4">
+          <div class="card">
+            <div class="card-header">Playstation 5</div>
+            <img src="img/produtos/PS501.avif" alt="Playstation 5" class="card-img-top"/>
+            <div class="card-body">
+              <h4 class="card-title">Playstation 5</h4>
+              <h5 class="card-subtitle">R$ 4.399,00</h5>
+              <p class="card-text">Sinta as possibilidades incríveis de jogos que vão além do extraordinário nos consoles PlayStation®5 e PS5® Edição Digital..</p>
+              <a href="#" class="btn btn-primary">Comprar</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- CARD 2 -->
+        <div class="col-4">
+          <div class="card">
+            <div class="card-header">Nintendo Switch</div>
+            <img src="img/produtos/switch01.webp" alt="Nintendo Switch" class="card-img-top"/>
+            <div class="card-body">
+              <h4 class="card-title">Nintendo Switch</h4>
+              <h5 class="card-subtitle">R$ 2.199,00</h5>
+              <p class="card-text">Descubra uma ampla variedade de jogos para a família de sistemas Nintendo Switch™, incluindo os últimos lançamentos, clássicos e títulos multijogador..</p>
+              <a href="#" class="btn btn-primary">Comprar</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- CARD 3 -->
+        <div class="col-4">
+          <div class="card">
+            <div class="card-header">Playstation 4</div>
+            <img src="img/produtos/PS401.avif" alt="Playstation 4" class="card-img-top"/>
+            <div class="card-body">
+              <h4 class="card-title">Playstation 4</h4>
+              <h5 class="card-subtitle">R$ 2.268,00</h5>
+              <p class="card-text">Jogos incríveis e diversão sem parar. O console PS4 oferece excelente poder de jogabilidade, entretenimento incrível tecnologia HDR vibrante1..</p>
+              <a href="#" class="btn btn-primary">Comprar</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div> <!-- fecha bg-site -->
+
+  <script src="lib/bootstrap.bundle.min.js"></script>
+</body>
+</html>
